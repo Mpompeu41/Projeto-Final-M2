@@ -1,5 +1,5 @@
-const database = require("../database");
 const Sequelize = require("sequelize");
+const database = require("./../database");
 
 const Kimono = database.define("kimono", {
   id: {
