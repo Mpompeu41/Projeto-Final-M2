@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Cadastro de Produto</title>
+    </head>
+    
+    <body>
+        <!-- Área de MENU -->
+        <nav>
+            <article>
+                <img src="/img/jiu-jitsu-brazilian-jiu-jitsu.gif" class="img-car-antigo gif" alt="">
+                <h1><a href="/">Arte Suave</a></h1>
+            </article>
+    
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cadastro">Cadastro</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Loja do Atleta</h1>
+        </header>
+        <div class="prod-cat-back-link">
+            <button><a class="upcp-catalogue-link" href="/">« Voltar</a></button>
+        </div>
+        <!-- Estruturação do Formulário -->
+        <main>
+            <section id="cadastrar">
+                <form action="/cadastro" method="POST">
+                    <div class="label-float">
+                        <label for="nome">Nome: </label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite o Produto" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="tamanho">Tamanho: </label>
+                        <input type="text" name="tamanho" id="tamanho" placeholder="Digite o Tamanho" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="cor">Cor: </label>
+                        <input type="text" name="cor" id="cor" placeholder="Digite a Cor" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="preco">Preço:</label>
+                        <input type="text" name="preco" id="preco" placeholder="Digite o Valor" required>
+                    </div>
+                    <div class="label-float">
+                        <label for="imagem">Imagem: </label>
+                        <input type="text" name="imagem" id="imagem" placeholder="Digite a URL" required>
+                    </div>
+                    
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+        </main>
+    </body>
+    
+    <script src="/js/script.js"></script>
+
+</html>

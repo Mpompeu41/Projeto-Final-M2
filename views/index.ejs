@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- <link
+      rel="shortcut icon"
+      href="https://assets.pokemon.com/static2/_ui/img/favicon.ico"
+    /> -->
+    <link rel="stylesheet" href="magnific-popup/magnific-popup.css" />
+
+    <title>Loja do Atleta</title>
+  </head>
+
+  <body>
+    <nav>
+      <article>
+        <img src="/img/arm-lock.gif" alt="" />
+        <h1><a href="/">Arte Suave</a></h1>
+      </article>
+
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/cadastro">Cadastro</a></li>
+      </ul>
+    </nav>
+    <main>
+      <header>
+        <h1>Loja do Atleta</h1>
+      </header>
+      <!-- <div id="container-imagem"></div>
+      <p>
+        <img
+          id="frase"
+          src="img/Frase.jpg"
+          alt="frase"
+          style="float: right; width: 400px"
+        />
+      </p> -->
+
+      <div class="container">
+        <%kimono.forEach(item=> {%>
+
+        <section class="card">
+          <ul>
+            <li>Nome: <%= item.nome %></li>
+            <li>Tamanho: <%= item.tamanho %></li>
+            <a href="/detalhes/<%= item.id %>">
+              <img src="<%= item.imagem %>" width="200" />
+            </a>
+          </ul>
+          <button type><a href="/editar/<%= item.id %>">Editar</a></button>
+        </section>
+        <%})%>
+      </div>
+      <!-- <footer>
+        <iframe
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/USB_X-U2zZs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </footer> -->
+    </main>
+
+    <script src="/js/script.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js"></script>
+  </body>
+</html>

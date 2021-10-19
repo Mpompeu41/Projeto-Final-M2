@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url(https://a-static.besthdwallpaper.com/samurai-guerreiro-papel-de-parede-1024x576-3141_44.jpg)
+    no-repeat center top fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+nav img {
+  width: 6rem;
+  padding-left: 0.5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  padding: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: rgb(255, 1, 1);
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: 0.5s;
+}
+nav ul li a:hover {
+  color: rgb(247, 113, 131);
+}
+nav article {
+  display: flex;
+  align-items: center;
+}
+nav article h1 a {
+  color: rgb(255, 1, 1);
+  padding-left: 0, 5rem;
+  text-decoration: none;
+}
+nav article img {
+  width: 3rem;
+  height: 3rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6rem 3rem 3rem 3rem;
+}
+header h1 {
+  color: rgb(196, 4, 4);
+  font-size: 5rem;
+  text-shadow: 3px 3px 2px 0px #00000060;
+  text-align: center;
+}
+.card {
+  width: 20rem;
+  padding: 3rem;
+  box-shadow: 2px 2px 1px 0px #00000050;
+  margin: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.5s;
+  background-color: #ffffff80;
+  color: #000;
+  text-decoration: none;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 15rem;
+  height: 15rem;
+}
+section#cadastrar {
+  background-color: #ffffff90;
+  padding: 2rem;
+  display: flex;
+  margin: 0rem 25rem 25rem 25rem;
+  box-shadow: 4px 4px 3px 0px #00000060;
+  border-radius: 1rem;
+}
+
+section#cadastrar form {
+  width: 100%;
+  padding: 1rem;
+}
+
+section#editar {
+  background-color: #ffffff90;
+  padding: 2rem;
+  display: flex;
+  margin: 0rem 25rem 25rem 25rem;
+  box-shadow: 4px 4px 3px 0px #00000060;
+  border-radius: 1rem;
+}
+
+section#editar form {
+  width: 100%;
+  padding: 1rem;
+}
+section#editar form button {
+  border: 1px solid #fe5b5b;
+  background-color: transparent;
+  color: rgb(255, 68, 68);
+  padding: 7px;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 40%;
+}
+section#editar form button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #fe5b5b;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3 ease-out;
+  border-radius: 0;
+}
+.label-float {
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.label-float input:focus {
+  border-bottom: 2px solid #0e0000;
+}
+.label-float label {
+  color: #070707;
+  font-size: 20px;
+}
+.label-float input:focus + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #050505;
+}
+.container {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section#cadastrar form button {
+  border: 1px solid #fe5b5b;
+  background-color: transparent;
+  color: rgb(255, 68, 68);
+  padding: 7px;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 40%;
+}
+section#cadastrar form button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}
+.card button {
+  border: 1px solid #fe5b5b;
+  background-color: whitesmoke;
+  color: rgb(255, 68, 68);
+  padding: 7px;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 40%;
+}
+.card button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}
+
+section#message {
+  padding: 1rem;
+  background-color: rgb(197, 255, 214);
+  color: #004d04;
+  position: fixed;
+  top: 5rem;
+  right: 2rem;
+  z-index: 100;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span#close {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-left: 2rem;
+}
+
+span#close:hover {
+  color: rgb(255, 0, 0);
+  transform: scale(1.2);
+}
+
+#video {
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  margin-left: -110px;
+  margin-top: -40px;
+}
+img#frase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 27rem 3rem 3rem;
+}
+header h4.areadecadastro {
+  text-align: center;
+}
+
+.card-detalhes {
+  width: 50%;
+  padding: 3rem;
+  box-shadow: 2px 2px 1px 0px #00000050;
+  margin-left: 25%;
+  
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #ffffff80;
+  color: #000;
+  text-decoration: none;
+}
+
+.card-detalhes img {
+  width: 15rem;
+  height: 15rem;
+}
+
+section#detalhes button {
+  border: 1px solid #fe5b5b;
+  background-color: whitesmoke;
+  color: rgb(255, 68, 68);
+  padding: 7px;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 1rem;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 40%;
+}
+
+section#detalhes button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}
+.prod-cat-back-link button {
+  border: 1px solid #fe5b5b;
+  background-color: whitesmoke;
+  color: rgb(255, 68, 68);
+  padding: 2px;
+  font-size: 12pt;
+  font-weight: bold;
+  border-radius: 1rem;
+  display: block;
+  margin-right: auto;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: 0.4s ease-out;
+  width: 5%;
+}
+.prod-cat-back-link button:hover {
+  background-color: rgb(255, 68, 68);
+  color: #fff;
+  transform: scale(1.1);
+}

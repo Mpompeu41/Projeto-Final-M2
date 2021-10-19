@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+        <title>Detalhes Kimono</title>
+    </head>
+    
+    <body>
+        <!-- Área de MENU -->
+        <nav>
+            <article>
+              <img src="/img/jiu jitsu kids.gif" alt="" />
+              <h1><a href="/">Arte Suave</a></h1>
+            </article>
+      
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/cadastro">Cadastro</a></li>
+            </ul>
+          </nav>
+        <header>
+            <h1>
+                Detalhes do Produto
+            </h1>
+        </header>
+        <div class="prod-cat-back-link">
+            <button><a class="upcp-catalogue-link" href="/">« Voltar</a></button>
+        </div>
+    
+        <section id="detalhes">
+            <div class=card-detalhes>
+               <ul>
+                <li>Nome: <%= kimonos.nome %></li>
+                <li>Cor: <%= kimonos.cor %></li>
+                <img src="<%= kimonos.imagem %>" width=200>
+                <li>Tamanho: <%= kimonos.tamanho %></li>
+                <li>Preco: <%= kimonos.preco %></li>
+                <form action="/deletar/<%= kimonos.id %>" method="POST">
+                  <button type="submit">DELETAR</button>
+              </form>
+              </ul>
+            </div>
+        </section>
+    
+
+    </body>
+    
+    <script src="/js/script.js"></script>
+
+</html>

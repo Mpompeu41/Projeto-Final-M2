@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Deletar Kimono</title>
+  </head>
+
+  <body>
+    <nav>
+      <img
+        src="/img/logo.jpg"
+        class="logo"
+        alt="Imagem da logo do projeto"
+        width="100"
+      />
+      <ul>
+        <li>
+          <a href="/">INÍCIO</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="prod-cat-back-link">
+      <button><a class="upcp-catalogue-link" href="/">« Voltar</a></button>
+    </div>
+    <% if(message !="" ) { %>
+    <section id="message">
+      <p><%= message %></p>
+      <span id="close">&times;</span>
+    </section>
+    <% } %> <% if(kimono != null) { %>
+
+    <section id="">
+      <form action="/deletar/<%= kimono.id %>" method="POST">
+        <img src="<%= kimono.imagem %>" width="200" />
+        <div>
+          <label for="nome">Nome: </label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Digite o nome"
+            value="<%= kimono.nome %>"
+            required
+          />
+        </div>
+        <div>
+          <label for="tamanho">Tamanho: </label>
+          <input
+            type="text"
+            name="tamanho"
+            id="tamanho"
+            placeholder="Digite o tamanho"
+            value="<%= kimono.tamanho %>"
+            required
+          />
+        </div>
+        <div>
+          <label for="cor">Cor: </label>
+          <input
+            type="text"
+            name="cor"
+            id="cor"
+            placeholder="Digite a Cor"
+            value="<%= kimono.cor %>"
+            required
+          />
+        </div>
+        <div>
+          <label for="preco">Preço:</label>
+          <input
+            type="text"
+            name="preco"
+            id="preco"
+            placeholder="Digite o Valor"
+            value="<%= kimono.preco %>"
+            required
+          />
+        </div>
+        <div>
+          <label for="imagem">Imagem: </label>
+          <input
+            type="text"
+            name="imagem"
+            id="imagem"
+            placeholder="Digite a URL"
+            value="<%= kimono.imagem %>"
+            required
+          />
+        </div>
+        <button type="submit">DELETAR PRODUTO</button>
+      </form>
+    </section>
+    <% } %>
+
+    <footer>
+      <img src="/img/imagem.jpg" class="" alt="" width="100" />
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
